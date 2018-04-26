@@ -1,0 +1,8 @@
+{
+    "data":[
+        ["Task", "Hours per Day"],
+        ["open",     35],
+        ["closed",      40],
+        ["wip",  25] 
+            ]
+}           

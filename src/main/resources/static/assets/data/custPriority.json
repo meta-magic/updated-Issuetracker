@@ -1,0 +1,13 @@
+{
+    "data":[
+        {
+            "priorityType":"High"
+        },
+        {
+            "priorityType":"Medium"
+        },
+        {
+            "priorityType":"Low"
+        }
+    ]
+}

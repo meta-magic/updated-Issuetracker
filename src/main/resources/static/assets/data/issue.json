@@ -1,0 +1,98 @@
+{
+    "data":[
+        {
+            "issue":"angular.js:13920 Error: loading directive templates asynchronously is not supported",
+            "id":1,
+            "description":"angular.js:13920 Error: loading directive templates asynchronously is not supported",
+            "status":"Closed",
+            "priority":"High",
+            "assignedPerson":"Ananya Singh",
+            "personid":"1",
+            "date":"Jan 1,2016",
+            "refno":"123"
+        },
+
+        {
+            "issue":"(Closed) BannerComponent (templateUrl) no title in the DOM until manually call detectChanges",
+            "id":2,
+            "description":"(Closed) BannerComponent (templateUrl) no title in the DOM until manually call detectChanges",
+            "status":"Open",
+            "priority":"Low",
+            "assignedPerson":"Siddhesh Bose",
+            "personid":"2",
+            "date":"Apr 14,2016",
+            "refno":"124"
+
+        },
+
+        {
+            "issue":"angular.js:13920 Error: loading directive templates asynchronously is not supported",
+            "id":3,
+            "description":"angular.js:13920 Error: loading directive templates asynchronously is not supported",
+            "status":"Work in progress",
+            "priority":"Medium",
+            "assignedPerson":"Serra Sydrenski",
+            "personid":"3",
+            "date":"May 22,2018",
+            "refno":"125"
+        },
+
+        {
+            "issue":"Outdated Structural directives guide listed in changelog for 4.0 docs is confusing",
+            "id":4,
+            "description":"Outdated Structural directives guide listed in changelog for 4.0 docs is confusing",
+            "status":"Closed",
+            "priority":"High",
+            "assignedPerson":"Anup Mukherjee",
+            "personid":"4",
+            "date":"Aug 08,2016",
+            "refno":"126"
+        },
+        {
+            "issue":"In QUICKSTART - unable to load web page in browser as per documentation",
+            "id":5,
+            "description":"In QUICKSTART - unable to load web page in browser as per documentation",
+            "status":"Open",
+            "priority":"Medium",
+            "assignedPerson":"Chris Hewlett",
+            "personid":"5",
+            "date":"Mar 21,2017",
+            "refno":"127"
+
+        },
+        {
+            "issue":"Add https://github.com/edcarroll/ng2-semantic-ui to Resources",
+            "id":6,
+            "description":"Add https://github.com/edcarroll/ng2-semantic-ui to Resources",
+            "status":"Work in progress",
+            "priority":"Low",
+            "assignedPerson":"James Houstan",
+            "personid":"6",
+            "date":"May 27,2017",
+            "refno":"128"
+        },
+        {
+            "issue":"The 'Framework' term doesn't fully describe the current state. It's more 'Application Platform'",
+            "id":7,
+            "description":"The 'Framework' term doesn't fully describe the current state. It's more 'Application Platform'",
+            "status":"Closed",
+            "priority":"Medium",
+            "assignedPerson":"Neil Pitt",
+            "personid":"7",
+            "date":"Sep 05,2017",
+            "refno":"129"
+        },
+        {
+            "issue":"Change title of bidirectional-service section in component-communication'",
+            "id":8,
+            "description":"Change title of bidirectional-service section in component-communication",
+            "status":"Open",
+            "priority":"Low",
+            "assignedPerson":"Anupriya Sharma",
+            "personid":"8",
+            "date":"Feb 02,2018",
+            "refno":"130"
+        } 
+        
+    ]
+}

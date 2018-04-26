@@ -1,0 +1,13 @@
+{
+    "data":[
+        {
+            "severityType":"Critical"
+        },
+        {
+            "severityType":"Fatal"
+        },
+        {
+            "severityType":"Warning"
+        }
+    ]
+}

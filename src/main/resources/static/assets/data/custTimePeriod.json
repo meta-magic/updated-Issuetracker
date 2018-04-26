@@ -1,0 +1,13 @@
+{
+    "data":[
+        {
+            "timePeriod":"Last One Week"
+        },
+        {
+            "timePeriod":"Last One Month"
+        },
+        {
+            "timePeriod":"Last One Year"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "data":[
+        {
+            "issueType":"Open"
+        },
+        {
+            "issueType":"Closed"
+        },
+        {
+            "issueType":"Work in progress"
+        },
+        {
+            "issueType":"All"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "response": {
+      "success": true,
+        "message": "Fetching  Data  Request Succeeded: Profile",
+        "data": [
+            [
+      [{"datatype":"number" ,"label":"Day"},{"datatype":"number","label":"Excellent"},
+        {"datatype":"number","label":"Good"},{"datatype":"number","label":"Average"},{"datatype":"number","label":"Bad"},{"datatype":"number","label":"Poor"}
+      ],
+      [1,  37.8, 80.8, 41.8,30,20],
+      [2,  30.9, 69.5, 32.4,25.4,10]
+    
+            ]
+        ]
+    }
+}

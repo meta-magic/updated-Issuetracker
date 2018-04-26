@@ -1,0 +1,19 @@
+{
+    "data":[
+        {
+            "custFeedbackDetails":"Excellent"
+        },
+        {
+            "custFeedbackDetails":"Good"
+        },
+        {
+            "custFeedbackDetails":"Average"
+        },
+        {
+            "custFeedbackDetails":"Bad"
+        },
+        {
+            "custFeedbackDetails":"Poor"
+        }
+    ]
+}
