@@ -1,4 +1,4 @@
-package com.issuetracker;
+/*package com.issuetracker;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -16,17 +16,17 @@ import com.issuetracker.model.Issue;
 import com.issuetracker.model.User;
 import com.issuetracker.repository.IssueRrepository;
 import com.issuetracker.repository.UserRepository;
-import com.issuetracker.service.UserRegistrationService;
+import com.issuetracker.service.UserRegistrationService;*/
 
 /*@RunWith(SpringRunner.class)
 @SpringBootTest*/
-public class UserTests {
+/*public class UserTests {
 
 	// @Autowired
 	private UserRepository userRepository;
 
 	@Autowired
-	private IssueRrepository issueRrepository;
+	private IssueRrepository issueRrepository;*/
 	//
 	// @Autowired
 	// private UserRegistrationService userReg;
@@ -67,4 +67,4 @@ public class UserTests {
 	// System.out.println("%%%");
 	// }
 
-}
+//}

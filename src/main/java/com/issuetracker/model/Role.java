@@ -23,6 +23,9 @@ public class Role implements Serializable {
 	public Role(int roleId,String role,String description) {
 		
 	}
+	public Role() {
+		
+	}
 	//Getter Setter for Data Members
 	public int getRoleId() {
 		return roleId;

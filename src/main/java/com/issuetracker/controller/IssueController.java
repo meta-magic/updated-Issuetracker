@@ -2,6 +2,8 @@ package com.issuetracker.controller;
 
 import java.util.Collection;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,9 +29,10 @@ public class IssueController {
 	/*---------------Issue Find by userId---------*/
 	@GetMapping
 	@RequestMapping("/findByRaisedBy")
-	public ResponseBean findByRaisedBy(@RequestParam("userId") Integer userId) throws PersistenceFailureException {
+	public ResponseBean findByRaisedBy(@RequestParam("userId") Integer userId,HttpServletRequest httpServletRequest) throws PersistenceFailureException {
+		httpServletRequest.getHeaderNames();
 		Collection<Issue> issues = issueService.findByRaisedBy(userId);
-		ResponseBean responseBean = new ResponseBean(true, " data retrived success", "null", null, issues);
+		ResponseBean responseBean = new ResponseBean(true, "Data retrived successfully",null,issues);
 		return responseBean;
 	}
 	/*------------Save Method of Issue-------*/
@@ -39,9 +42,9 @@ public class IssueController {
 		ResponseBean responseBean = null;
 		try {
 			issueService.save(issue);
-			responseBean = new ResponseBean(true, "Issue saved Succesfully", null);
+			responseBean = new ResponseBean(true, "Issue saved Succesfully", null,null);
 		} catch (BaseException e) {
-			responseBean = new ResponseBean(false, null, "issue not saved");
+			responseBean = new ResponseBean(false,"Issue Not Saved", null, e);
 			e.printStackTrace();
 		}
 
@@ -54,9 +57,9 @@ public class IssueController {
 		ResponseBean responseBean = null;
 		try {
 			issueService.updateAssign(issuedto);;
-			responseBean = new ResponseBean(true, "Issue Assigned", null);
+			responseBean = new ResponseBean(true, "Issue Assigned", null, null);
 		} catch (Throwable e) {
-			responseBean = new ResponseBean(false, null, "Issue Not Assigned");
+			responseBean = new ResponseBean(false, "", null, "Issue Not Assigned");
 			e.printStackTrace();
 		}
 		return responseBean;

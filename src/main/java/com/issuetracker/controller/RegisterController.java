@@ -28,9 +28,9 @@ public class RegisterController {
 		ResponseBean responseBean = null;
 		try {
 			userregisterservice.save(registration);
-			responseBean = new ResponseBean(true, "USER REGISTERED SUCESSFULLY.", null);
+			responseBean = new ResponseBean(true, "USER REGISTERED SUCESSFULLY.", null,null);
 		} catch (BaseException e) {
-			responseBean = new ResponseBean(false, null,"USER NOT REGISTERED");
+			responseBean = new ResponseBean(false, null, null, "USER NOT REGISTERED");
 			e.printStackTrace();
 		}
 

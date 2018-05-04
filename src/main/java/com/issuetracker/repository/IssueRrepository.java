@@ -18,5 +18,7 @@ public interface IssueRrepository {
 	public Issue findByIssueId(String issueId) throws PersistenceFailureException;
 	
 	
+	
+	
 
 }

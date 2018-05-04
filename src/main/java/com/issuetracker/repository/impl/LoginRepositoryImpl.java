@@ -9,6 +9,8 @@ import javax.jdo.Transaction;
 import org.springframework.stereotype.Repository;
 
 import com.issuetracker.PMFConfig;
+import com.issuetracker.dto.RoleDto;
+import com.issuetracker.dto.UserDTO;
 import com.issuetracker.exceptions.PersistenceFailureException;
 import com.issuetracker.model.Login;
 import com.issuetracker.repository.LoginRepository;
@@ -23,6 +25,7 @@ public class LoginRepositoryImpl implements LoginRepository {
 	public Login findByLoginId(String loginId) throws PersistenceFailureException {
 		PersistenceManager pm = PMFConfig.getPersistenceManagerFactory().getPersistenceManager();
 		Login login = null;
+
 		try {
 			Query query = (pm.newQuery(Login.class));
 			query.setFilter("this.loginId==:loginId");
@@ -89,6 +92,12 @@ public class LoginRepositoryImpl implements LoginRepository {
 			pm.close();
 		}
 		return login;
+	}
+
+	@Override
+	public RoleDto doLogin(UserDTO userDTO) throws PersistenceFailureException {
+		
+		return null;
 	}
 
 }

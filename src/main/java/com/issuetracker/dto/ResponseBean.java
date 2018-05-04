@@ -12,33 +12,34 @@ public class ResponseBean implements Serializable {
 
 	private boolean success;
 
-	private String successMessage;
-
-	private Object errorMessage;
+	private String message;
 
 	private List<String> errors;
 
 	private Object data;
 
-	public ResponseBean() {
-		super();
-
-	}
-
-	public ResponseBean(boolean success, String successMessage, Object errorMessage) {
+	public ResponseBean(boolean success, String message, List<String> errors, Object data) {
 		super();
 		this.success = success;
-		this.successMessage = successMessage;
-		this.errorMessage = errorMessage;
-	}
-
-	public ResponseBean(boolean success, String successMessage, Object errorMessage, List<String> errors, Object data) {
-		super();
-		this.success = success;
-		this.successMessage = successMessage;
-		this.errorMessage = errorMessage;
+		this.message = message;
 		this.errors = errors;
 		this.data = data;
+	}
+
+	public boolean isSuccess() {
+		return success;
+	}
+
+	public void setSuccess(boolean success) {
+		this.success = success;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 	public List<String> getErrors() {
@@ -57,42 +58,6 @@ public class ResponseBean implements Serializable {
 		this.data = data;
 	}
 
-	public void setErrorMessage(Object errorMessage) {
-		this.errorMessage = errorMessage;
-	}
-
-	public boolean isSuccess() {
-		return success;
-	}
-
-	public void setSuccess(boolean success) {
-		this.success = success;
-	}
-
-	public String getSuccessMessage() {
-		return successMessage;
-	}
-
-	public void setSuccessMessage(String successMessage) {
-		this.successMessage = successMessage;
-	}
-
-	public Object getErrorMessage() {
-		return errorMessage;
-	}
-
-	public void setErrorMessage(String errorMessage) {
-		this.errorMessage = errorMessage;
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
-	@Override
-	public String toString() {
-		return "ResponseBean [success=" + success + ", successMessage=" + successMessage + ", errorMessage="
-				+ errorMessage + "]";
-	}
+	
 
 }

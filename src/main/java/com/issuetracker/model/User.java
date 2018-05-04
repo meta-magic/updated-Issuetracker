@@ -13,7 +13,7 @@ import javax.validation.constraints.Size;
 import com.issuetracker.utils.CommonValidator;
 
 @PersistenceCapable(detachable = "true", table = "User")
-public class User implements Serializable,CommonValidator {
+public class User implements Serializable, CommonValidator {
 
 	private static final long serialVersionUID = 1L;
 
@@ -24,23 +24,23 @@ public class User implements Serializable,CommonValidator {
 	@Persistent(name = "FIRSTNAME")
 	@NotNull(message = "FirstName should not be null")
 	@Size(min = 4, max = 15, message = "FirstName should not be empty")
-	
+
 	private String firstName;
 
 	@Persistent(name = "LASTNAME")
 	@NotNull(message = "LastName should not be null")
 	@Size(min = 4, max = 15, message = "LastName should not be empty")
-	
+
 	private String lastName;
 
 	@Persistent
 	@ForeignKey(table = "Login", name = "id")
 	@NotNull(message = "ID should not be null")
 
-	private Long id;
+	private int id;
 	@Persistent
-	@ForeignKey(table="Role",name="roleId")
-	@NotNull(message="Role Id should not be null")
+	@ForeignKey(table = "Role", name = "roleId")
+	@NotNull(message = "Role Id should not be null")
 	private int roleId;
 
 	public User() {
@@ -53,9 +53,8 @@ public class User implements Serializable,CommonValidator {
 		this.lastName = lastName;
 	}
 
-	public User( String firstName, String lastName, Long id, int roleId) {
+	public User(String firstName, String lastName, int id, int roleId) {
 		super();
-		
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.id = id;
@@ -85,5 +84,11 @@ public class User implements Serializable,CommonValidator {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", id=" + id
+				+ ", roleId=" + roleId + "]";
 	}
 }

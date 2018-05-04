@@ -21,7 +21,7 @@ public class Login implements Serializable, CommonValidator {
 	// Data Members
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.INCREMENT)
-	private Long id;
+	private int id;
 
 	@Persistent(name = "LOGINID")
 	@NotNull(message = "Login id shoud not be null")
@@ -46,16 +46,17 @@ public class Login implements Serializable, CommonValidator {
 	}
 
 	// Getter Setter
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public String getLoginId() {
 		return loginId;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public void setLoginId(String loginId) {
